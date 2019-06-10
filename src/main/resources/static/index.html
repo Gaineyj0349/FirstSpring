@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel to JSON</title>
+</head>
+<body>
+<header>This is an simple preview of a utility that converts an Excel workbook to a JSON String!</header>
+<h3>
+    It will currently only accept files with extension ".xlsx"
+</h3>
+<h2><U>Instructions</U></h2>
+<h3>1 - Make sure the excel file as at least one sheet.<br>
+    2 - Sheets must have a table starting in cell A1. (See the below images as example) <br>
+    3 - Select the File by clicking the Browse button below. <br>
+    4 - Click Convert and recieve the JSON string! <br>
+</h3>
+<form action="/extract" method="POST" enctype="multipart/form-data">
+    <input type="file" name="fileupload" value="fileupload" id="fileupload"> <br><br>
+    <input type="submit" value="Convert">
+</form>
+
+<img src="../images/excelPic.PNG"
+     alt="Before"
+     width="50%"
+     height="50%"
+    >
+<img src="../images/resultsJSONexample.PNG"
+     alt="After"
+     width="50%"
+     height="50%">
+
+</body>
+</html>
